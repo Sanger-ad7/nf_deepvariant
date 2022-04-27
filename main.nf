@@ -1,12 +1,12 @@
 nextflow.preview.dsl=2
 
-include { sort_cram } from '../modules/sort_cram.nf'
-include { remap_cram } from '../modules/remap_cram.nf'
-include { markDuplicates } from '../modules/markDuplicates.nf'
-include { coord_sort_cram } from '../modules/coord_sort_cram.nf'
-include { bam_to_cram } from '../modules/bam_to_cram.nf'
-include { deepvariant } from '../modules/deepvariant.nf'
-include { gatk_haplotypecaller } from '../modules/gatk_haplotypecaller.nf'
+include { sort_cram } from './nf_deepvariant/modules/sort_cram.nf'
+include { remap_cram } from './nf_deepvariant/modules/remap_cram.nf'
+include { markDuplicates } from './nf_deepvariant/modules/markDuplicates.nf'
+include { coord_sort_cram } from './nf_deepvariant/modules/coord_sort_cram.nf'
+include { bam_to_cram } from './nf_deepvariant/modules/bam_to_cram.nf'
+include { deepvariant } from './nf_deepvariant/modules/deepvariant.nf'
+include { gatk_haplotypecaller } from './nf_deepvariant/modules/gatk_haplotypecaller.nf'
 
 workflow {
     main:
