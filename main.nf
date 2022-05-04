@@ -1,4 +1,4 @@
-nextflow.preview.dsl=2
+nextflow.enable.dsl=2
 
 include { sort_cram } from './nf_deepvariant/modules/sort_cram.nf'
 include { remap_cram } from './nf_deepvariant/modules/remap_cram.nf'
